@@ -13,10 +13,18 @@ struct DiamondView: View {
   
   var body: some View {
     VStack {
-      Image(systemName: "globe")
-        .imageScale(.large)
-        .foregroundColor(.accentColor)
-      Text("Hello, world!")
+      Spacer()
+      Text(viewModel.output)
+        .padding(40)
+        .font(.system(size: 500))
+        .minimumScaleFactor(0.01)
+      Spacer()
+      HStack {
+        Text("Use Underscore:")
+        Spacer()
+        Toggle("", isOn: $viewModel.useUndescore)
+      }
+      TextField("Seed", text: $viewModel.input)
     }
     .padding()
   }

@@ -8,9 +8,10 @@
 import Foundation
 
 final class DiamondGenerator {
+  var separator: String = "_"
+  
   func generate(_ input: String) -> [[String]] {
     guard !input.isEmpty else { return [[]] }
-    let separator = "_"
     let size = input.count * 2 - 1
     var result = Array(repeating: Array(repeating: separator, count: size), count: size)
     
