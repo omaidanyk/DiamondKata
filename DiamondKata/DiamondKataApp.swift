@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct DiamondKataApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      DiamondView(viewModel: DiamondViewModel())
     }
+  }
 }

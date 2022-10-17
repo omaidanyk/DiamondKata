@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BB579D1928FD367F00F3FF71 /* DiamondKataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB579D1828FD367F00F3FF71 /* DiamondKataApp.swift */; };
-		BB579D1B28FD367F00F3FF71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB579D1A28FD367F00F3FF71 /* ContentView.swift */; };
+		BB579D1B28FD367F00F3FF71 /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB579D1A28FD367F00F3FF71 /* DiamondView.swift */; };
 		BB579D1D28FD368000F3FF71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB579D1C28FD368000F3FF71 /* Assets.xcassets */; };
 		BB579D2028FD368000F3FF71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB579D1F28FD368000F3FF71 /* Preview Assets.xcassets */; };
 		BB579D2A28FD368000F3FF71 /* DiamondKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB579D2928FD368000F3FF71 /* DiamondKataTests.swift */; };
 		BB579D3428FD368000F3FF71 /* DiamondKataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB579D3328FD368000F3FF71 /* DiamondKataUITests.swift */; };
 		BB579D3628FD368000F3FF71 /* DiamondKataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB579D3528FD368000F3FF71 /* DiamondKataUITestsLaunchTests.swift */; };
+		BB579D4428FD37C900F3FF71 /* DiamondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB579D4328FD37C900F3FF71 /* DiamondViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		BB579D1528FD367F00F3FF71 /* DiamondKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiamondKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB579D1828FD367F00F3FF71 /* DiamondKataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondKataApp.swift; sourceTree = "<group>"; };
-		BB579D1A28FD367F00F3FF71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB579D1A28FD367F00F3FF71 /* DiamondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
 		BB579D1C28FD368000F3FF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB579D1F28FD368000F3FF71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB579D2528FD368000F3FF71 /* DiamondKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiamondKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		BB579D2F28FD368000F3FF71 /* DiamondKataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiamondKataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB579D3328FD368000F3FF71 /* DiamondKataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondKataUITests.swift; sourceTree = "<group>"; };
 		BB579D3528FD368000F3FF71 /* DiamondKataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondKataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB579D4328FD37C900F3FF71 /* DiamondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				BB579D1828FD367F00F3FF71 /* DiamondKataApp.swift */,
-				BB579D1A28FD367F00F3FF71 /* ContentView.swift */,
+				BB579D4228FD37AA00F3FF71 /* DiamondView */,
 				BB579D1C28FD368000F3FF71 /* Assets.xcassets */,
 				BB579D1E28FD368000F3FF71 /* Preview Content */,
 			);
@@ -125,6 +127,15 @@
 				BB579D3528FD368000F3FF71 /* DiamondKataUITestsLaunchTests.swift */,
 			);
 			path = DiamondKataUITests;
+			sourceTree = "<group>";
+		};
+		BB579D4228FD37AA00F3FF71 /* DiamondView */ = {
+			isa = PBXGroup;
+			children = (
+				BB579D1A28FD367F00F3FF71 /* DiamondView.swift */,
+				BB579D4328FD37C900F3FF71 /* DiamondViewModel.swift */,
+			);
+			path = DiamondView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB579D1B28FD367F00F3FF71 /* ContentView.swift in Sources */,
+				BB579D1B28FD367F00F3FF71 /* DiamondView.swift in Sources */,
 				BB579D1928FD367F00F3FF71 /* DiamondKataApp.swift in Sources */,
+				BB579D4428FD37C900F3FF71 /* DiamondViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
